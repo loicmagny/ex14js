@@ -5,9 +5,18 @@
     <title>Exercice 6</title>
   </head>
   <body>
-      <img src="images/image1.jpg" onmouseover="this.src='images/image1_2.jpg'" onmouseout="this.src='images/image1.jpg'" id="image1" />
-      <img src="images/image2.jpg" onmouseover="this.src='images/image2_2.jpg'" onmouseout="this.src='images/image2.jpg'" id="image2" />
-      <img src="images/image3.jpg" onmouseover="this.src='images/image3_2.jpg'" onmouseout="this.src='images/image3.jpg'" id="image3" />
-      <img src="images/image4.jpg" onmouseover="this.src='images/image4_2.jpg'" onmouseout="this.src='images/image4.jpg'" id="image4" />
-      <img src="images/image5.jpg" onmouseover="this.src='images/image5_2.jpg'" onmouseout="this.src='images/image5.jpg'" id="image5" />
+      <img src="image1.jpg" onmouseover="changeImg(this);" onmouseout="returnImg(this);" id="image1" />
+      <img src="image2.jpg" onmouseover="changeImg(this);" onmouseout="returnImg(this);" id="image2" />
+      <img src="image3.jpg" onmouseover="changeImg(this);" onmouseout="returnImg(this);" id="image3" />
+      <img src="image4.jpg" onmouseover="changeImg(this);" onmouseout="returnImg(this);" id="image4" />
+      <img src="image5.jpg" onmouseover="changeImg(this);" onmouseout="returnImg(this);" id="image5" />
+<script>
+      function changeImg(image){
+  image.src=image.id+'_2.jpg';
+}
+  function returnImg(image){
+    image.src=image.id+'.jpg';
+  }
+</script>
+</body>
 </html>
